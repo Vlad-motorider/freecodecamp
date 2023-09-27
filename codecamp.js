@@ -8,6 +8,8 @@ const myArray = [
 ];
 const removedFromMyArray = myArray.shift();
 
+
+
 // CONDITION
 // There should be at least 5 sub-arrays in the list.
 
@@ -20,6 +22,8 @@ const myList = [
   ["apple", 22],
 ];
 
+
+
 // CONDITION
 // Create a function called reusableFunction which prints the string Hi World to the dev console.
 // Call the function.
@@ -29,6 +33,8 @@ function reusableFunction() {
   console.log("Hi World");
 }
 reusableFunction();
+
+
 
 // CONDITION
 // Add the less than operator to the indicated lines so that the return statements make sense.
@@ -50,6 +56,8 @@ function testLessThan(val) {
 
 testLessThan(10);
 
+
+
 // CONDITION
 // Add the less than or equal to operator to the indicated lines so that the return statements make sense.
 
@@ -70,6 +78,8 @@ function testLessOrEqual(val) {
 
 testLessOrEqual(10);
 
+
+
 // CONDITION
 // Replace the two if statements with one statement, using the && operator, which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string No.
 
@@ -86,6 +96,8 @@ function testLogicalAnd(val) {
 }
 
 testLogicalAnd(10);
+
+
 
 // CONDITION
 // Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside.
@@ -118,7 +130,7 @@ testLogicalOr(15);
 function sequentialSizes(val) {
   let answer = "";
   // Only change code below this line
-  switch(val) {
+  switch (val) {
     case 1:
     case 2:
     case 3:
@@ -136,9 +148,39 @@ function sequentialSizes(val) {
       break;
   }
 
-
   // Only change code above this line
   return answer;
 }
 
 sequentialSizes(1);
+
+
+
+// CONDITION
+//Change the chained if/else if statements into a switch statement.
+
+// SOLUTION
+function chainToSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+  switch(val) {
+    case "bob":
+      answer = "Marley";
+      break;
+    case 42:
+      answer = "The Answer";
+      break;
+    case 1:
+      answer = "There is no #1";
+      break;
+    case 99:
+      answer = "Missed me by this much!";
+      break;
+    case 7:
+      answer = "Ate Nine";
+      break;   
+  }
+  return answer;
+}
+
+chainToSwitch(7);
